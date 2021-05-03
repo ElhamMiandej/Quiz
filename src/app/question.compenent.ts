@@ -3,6 +3,12 @@ import { Component } from '@angular/core'
     selector : 'question',
     templateUrl :'./question.component.html'
 })
+
+
 export class QuestionComponent{
-    
+    question: string = '';
+    post(question:string)
+    {
+      console.log(question)
+    }
 }
