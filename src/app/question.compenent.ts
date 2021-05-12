@@ -8,7 +8,8 @@ import {ApiService}  from './api.service'
 
 export class QuestionComponent{
   constructor (private api :ApiService){}
-    question= {"text":""};
+    question= {"text":"", "correctAnswer":"", "answer1" :"","answer2" :"", "answer3" :""};
+    
     post(question : any)
     {
       this.api.postQuestion( question)
